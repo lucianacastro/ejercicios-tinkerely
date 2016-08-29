@@ -65,6 +65,40 @@ def get_participacion_societaria():
 	print "y el socio 2 el %f por ciento" %(participacion_socio_2)
 get_participacion_societaria()
 
+#Punto 2.7.
+def get_calificacion_analisis():
+	nota_tp_1 = float(raw_input("Ingresa la calificacion del primer tp de analisis: "))
+	nota_tp_2 = float(raw_input("Ingresa la calificacion del segundo tp de analisis: "))
+	nota_tp_3 = float(raw_input("Ingresa la calificacion del tercer tp de analisis: "))
+	nota_examen = float(raw_input("Ingresa la calificacion del examen de analisis: "))
+	promedio_tp = (nota_tp_1 + nota_tp_2 + nota_tp_3) / 3.0
+	calificacion_analisis = nota_examen * 0.9 + promedio_tp * 0.1  
+	return calificacion_analisis
+
+def get_calificacion_algebra():
+	nota_tp_1 = float(raw_input("Ingresa la calificacion del primer tp de algebra: "))
+	nota_tp_2 = float(raw_input("Ingresa la calificacion del segundo tp de algebra: "))
+	nota_examen = float(raw_input("Ingresa la calificacion del examen de algebra: "))
+	promedio_tp = (nota_tp_1 + nota_tp_2) / 2.0
+	calificacion_algebra = nota_examen * 0.8 + promedio_tp * 0.2  
+	return calificacion_algebra
+
+def get_calificacion_programacion():
+	nota_tp_1 = float(raw_input("Ingresa la calificacion del primer tp de programacion: "))
+	nota_tp_2 = float(raw_input("Ingresa la calificacion del segundo tp de programacion: "))
+	nota_tp_3 = float(raw_input("Ingresa la calificacion del tercer tp de programacion: "))
+	nota_examen = float(raw_input("Ingresa la calificacion del examen de programacion: "))
+	promedio_tp = (nota_tp_1 + nota_tp_2 + nota_tp_3) / 3.0
+	calificacion_programacion = nota_examen * 0.85 + promedio_tp * 0.15  
+	return calificacion_programacion
+
+def get_promedio_materias():
+	promedio_materias = (get_calificacion_analisis() + get_calificacion_algebra() + get_calificacion_programacion()) / 3.0
+	print "El promedio de las materias es: " + str(promedio_materias)
+
+get_promedio_materias()
+
+
 
 
 
