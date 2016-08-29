@@ -20,3 +20,18 @@ def get_comision():
 
 get_comision()
 
+#Punto 2.3.
+def get_calificacion_final():
+	nota_parcial_1 = float(raw_input("Ingresa la calificacion del primer parcial: "))
+	nota_parcial_2 = float(raw_input("Ingresa la calificacion del segundo parcial: "))
+	nota_parcial_3 = float(raw_input("Ingresa la calificacion del tercer parcial: "))
+	examen_final = float(raw_input("Ingresa la calificacion del examen final: "))
+	trabajo_final = float(raw_input("Ingresa la calificacion del trabajo final: "))
+	promedio_parciales = (nota_parcial_1 + nota_parcial_2 + nota_parcial_3) / 3.0
+	cincuenta_y_cinco =promedio_parciales * 0.55
+	treinta = examen_final * 0.3
+	quince = trabajo_final * 0.15
+	nota_final = cincuenta_y_cinco + treinta + quince
+	return "la nota final del alumno es: " + str(nota_final)
+
+print get_calificacion_final()
