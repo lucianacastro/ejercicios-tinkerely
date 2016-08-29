@@ -54,3 +54,17 @@ def get_pulsaciones():
 	print "usted deberia tener %f pulsaciones por cada diez segundos" %pulsaciones 
 get_pulsaciones()
 
+#Punto 2.6.
+def get_participacion_societaria():
+	inversion_socio_1 = float(raw_input("Ingresa la participacion del socio 1: "))
+	inversion_socio_2 = float(raw_input("Ingresa la participacion del socio 1: "))
+	inversion_total = inversion_socio_1 + inversion_socio_2
+	participacion_socio_1 = inversion_socio_1 / inversion_total * 100
+	participacion_socio_2 = inversion_socio_2 / inversion_total * 100
+	print "El socio uno tiene una participacion del %f por ciento" %(participacion_socio_1) 
+	print "y el socio 2 el %f por ciento" %(participacion_socio_2)
+get_participacion_societaria()
+
+
+
+
