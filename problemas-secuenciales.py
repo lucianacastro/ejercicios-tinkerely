@@ -46,3 +46,11 @@ def get_porcentaje_hombres_mujeres():
 	print "En el curso hay un %f por ciento de mujeres" %(porcentaje_mujeres), 
 	print "y un %f por ciento de hombres" %(porcentaje_hombres)
 get_porcentaje_hombres_mujeres()
+
+#Punto 2.5.
+def get_pulsaciones():
+	edad = float(raw_input("Ingresa su edad: "))
+	pulsaciones = (220 - edad)/10
+	print "usted deberia tener %f pulsaciones por cada diez segundos" %pulsaciones 
+get_pulsaciones()
+
