@@ -1,7 +1,7 @@
 #Punto 2.1.
 def get_interes():
 	capital = float(raw_input("Ingrese el capital: "))
-	tasa = 0.5
+	tasa = 0.05
 	interes = capital * tasa
 	return interes
 
@@ -35,3 +35,14 @@ def get_calificacion_final():
 	return "la nota final del alumno es: " + str(nota_final)
 
 print get_calificacion_final()
+
+#Punto 2.4.
+def get_porcentaje_hombres_mujeres():
+	total_mujeres = float(raw_input("Ingresa el total de alumnas mujeres: "))
+	total_hombres = float(raw_input("Ingresa el total de alumnos hombres: "))
+	total_alumnos = total_mujeres + total_hombres
+	porcentaje_mujeres = total_mujeres / total_alumnos * 100
+	porcentaje_hombres = total_hombres / total_alumnos * 100
+	print "En el curso hay un %f por ciento de mujeres" %(porcentaje_mujeres), 
+	print "y un %f por ciento de hombres" %(porcentaje_hombres)
+get_porcentaje_hombres_mujeres()
